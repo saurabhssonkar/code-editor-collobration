@@ -80,7 +80,7 @@ const FormComponent = () => {
                 email:email
             })
             if (res.data.exists) {
-                const link = `${window.location.origin}/editor/${currentUser.roomId}&email=${email}`
+                const link = `${window.location.origin}/editor/${currentUser.roomId}`
                 setGeneratedLink(link)
                 toast.success("Link generated for valid email")
             } else {
