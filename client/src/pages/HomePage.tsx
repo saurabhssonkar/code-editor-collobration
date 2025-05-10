@@ -1,5 +1,5 @@
 import { useState } from "react";
-import illustration from "@/assets/illustration.svg";
+import illustration from "@/assets/illustration.png";
 import FormComponent from "@/components/forms/FormComponent";
 import LoginComponent from "@/components/forms/LoginComponent";
 import SignupComponent from "@/components/forms/SignupComponent";
@@ -15,7 +15,7 @@ function HomePage() {
                     <img
                         src={illustration}
                         alt="Code Sync Illustration"
-                        className="mx-auto w-[250px] sm:w-[400px]"
+                        className="mx-auto w-[300px] sm:w-[450px]"
                     />
                 </div>
 
@@ -25,7 +25,7 @@ function HomePage() {
                             <LoginComponent   onLoginSuccess={() => setStep("form")}/>
                             <button
                                 onClick={() => setStep("signup")}
-                                className="mt-4 text-blue-600 hover:underline"
+                                className="mt-4 text-blue-600  text-xl hover:underline"
                             >
                                 Don't have an account? Register
                             </button>
@@ -37,7 +37,7 @@ function HomePage() {
                             <SignupComponent onSingupSuccess={() => setStep("form")} />
                             <button
                                 onClick={() => setStep("login")}
-                                className="mt-4 text-blue-600 hover:underline"
+                                className="mt-4 text-xl text-blue-600 hover:underline"
                             >
                                 Back to Login
                             </button>

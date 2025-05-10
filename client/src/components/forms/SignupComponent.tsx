@@ -97,7 +97,7 @@ const SignupComponent = ({ onSingupSuccess }: { onSingupSuccess: () => void }) =
           type="submit"
           disabled={!isFormValid || loading}
           className={`mt-2 w-full rounded-md px-8 py-3 text-lg font-semibold text-black ${
-            isFormValid && !loading ? "bg-primary" : "bg-gray-400 cursor-not-allowed"
+            isFormValid && !loading ? "bg-orange-400" : "bg-gray-400 cursor-not-allowed"
           }`}
         >
           {loading ? "Signing up..." : "Signup"}
